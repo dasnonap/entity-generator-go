@@ -38,4 +38,30 @@ func main() {
 
 	fmt.Println(string(jsonData))
 
+	// response, error := http.Get("http://127.0.0.1:8000/api/posts")
+	// if error != nil {
+	// 	panic(error)
+	// }
+
+	// defer response.Body.Close()
+
+	// var data map[string]interface {}
+
+	// error = json.NewDecoder(response.Body).Decode(&data)
+	
+	// if error != nil {
+	// 	panic(error)
+	// }
+
+	// fmt.Println(data["items"])
+
+	// client := client.NewClient(client.GET, "http://127.0.0.1:8000/api/posts")
+
+	// response, error := client.SendRequest()
+
+	// if (error != nil) {
+	// 	panic(error)
+	// }
+
+	// response.PrettyPrint()
 }
